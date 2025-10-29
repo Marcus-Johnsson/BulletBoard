@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+/*using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata;
 using BulletBoard.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -38,5 +38,4 @@ public class CreateNotes
         var response = new Response(newNote.Id, newNote.Title);
         return Results.Ok(response);
     }
-    private record Response(int Id, string Title);//private record Response(int Id, string SupplierName);
-}
+}*/
