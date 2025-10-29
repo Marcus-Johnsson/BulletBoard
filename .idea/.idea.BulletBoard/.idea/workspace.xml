@@ -9,25 +9,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4f9be2d-7be4-41a0-94ad-2bc8961a77ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BulletBoard/EndPoints/Notes/GetNotes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BulletBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BulletBoard/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulletBoard/BulletBoard.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BulletBoard/BulletBoard.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulletBoard/EndPoints/Notes/CreateNotes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BulletBoard/EndPoints/Notes/CreateNotes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulletBoard/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BulletBoard/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e76a10e0f2c66087a2c9afd306a6692c46d6dd493ad49cd273ef17c7ff13ed/IEndpointRouteBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BulletBoard/EndPoints/Notes/CreateNotes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BulletBoard/EndPoints/Notes/GetNotes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BulletBoard/Models/Note.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="34k0oGtCmsAelXGU3qIgrbIL2nK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,10 +41,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.BulletBoard: http.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "MarcusBranch",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -88,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761742436473</updated>
-      <workItem from="1761742437656" duration="3171000" />
+      <workItem from="1761742437656" duration="1526000" />
     </task>
     <servers />
   </component>
@@ -96,17 +104,6 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

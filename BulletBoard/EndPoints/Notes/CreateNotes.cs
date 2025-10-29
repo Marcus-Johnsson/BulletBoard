@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+/*using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata;
 using BulletBoard.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -22,4 +22,4 @@ public class CreateNotes
     {
         
     }
-}
+}*/
