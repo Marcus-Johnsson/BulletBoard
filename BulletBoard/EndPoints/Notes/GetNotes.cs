@@ -1,3 +1,4 @@
+using BulletBoard.Data;
 using BulletBoard.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -7,16 +8,23 @@ public class GetNotes
 {
     public static void MapEndpoint(IEndpointRouteBuilder app) => app
         .MapGet("/getnotes", Handle)
-        .Produces<CreateNotes>(StatusCodes.Status201Created)
+        .Produces<GetNotes>(StatusCodes.Status201Created)
         .Produces(StatusCodes.Status400BadRequest)
         .Produces(StatusCodes.Status401Unauthorized);
-    
-private record Request(Note note);
-    
-private class Response{}
+    private class Response(List<Note> Notes);
 
-private static async Task<Response> Handle(
-    [FromBody]  Request request)
-{
-    
+
+    private static async Task<IResult> Handle(
+        [FromServices] BulletDbContext context)
+    {
+        try
+        {
+            var notes = await context.Notes.ToListAsync();
+            return Results.Ok(notes);
+        }
+        catch (Exception ex)
+        {
+            return Results.Problem(ex.Message);
+        }
+    }
 }
