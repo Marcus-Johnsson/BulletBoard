@@ -8,12 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9be2d-7be4-41a0-94ad-2bc8961a77ee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BulletBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BulletBoard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulletBoard/BulletBoard.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BulletBoard/BulletBoard.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulletBoard/EndPoints/Notes/CreateNotes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BulletBoard/EndPoints/Notes/CreateNotes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulletBoard/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BulletBoard/Program.cs" afterDir="false" />
-    </list>
+    <list default="true" id="a4f9be2d-7be4-41a0-94ad-2bc8961a77ee" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "MarcusBranch",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
