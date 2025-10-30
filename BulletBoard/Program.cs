@@ -21,6 +21,8 @@ builder.Services.AddDbContext<BulletDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 var app = builder.Build();
 
+
+UpdateNotes.MapEndpoint(app);
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

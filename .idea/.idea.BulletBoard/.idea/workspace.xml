@@ -8,7 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9be2d-7be4-41a0-94ad-2bc8961a77ee" name="Changes" comment="" />
+    <list default="true" id="a4f9be2d-7be4-41a0-94ad-2bc8961a77ee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BulletBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BulletBoard/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulletBoard/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BulletBoard/Program.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Glennur"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Marcus-Johnsson/BulletBoard.git",
+    "accountId": "04d6c63b-0910-4489-9be1-91941cddf62e"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e76a10e0f2c66087a2c9afd306a6692c46d6dd493ad49cd273ef17c7ff13ed/IEndpointRouteBuilder.cs" root0="SKIP_HIGHLIGHTING" />
@@ -41,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "MarcusBranch",
+    "git-widget-placeholder": "SaraBranch",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -92,6 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1761742436473</updated>
       <workItem from="1761742437656" duration="1526000" />
+      <workItem from="1761745664174" duration="2940000" />
     </task>
     <servers />
   </component>
