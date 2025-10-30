@@ -25,7 +25,7 @@ public class UpdateNotes
             return Results.NotFound();
         
         if (string.IsNullOrWhiteSpace(updateNote.Title))
-            return Results.BadRequest("Title cannot be empty");
+            return Results.BadRequest("Title cannot be empty");s
         
         //Update fields
         note.Title = updateNote.Title;
