@@ -10,8 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a4f9be2d-7be4-41a0-94ad-2bc8961a77ee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BulletBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BulletBoard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulletBoard/BulletBoard.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BulletBoard/BulletBoard.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulletBoard/EndPoints/Notes/CreateNotes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BulletBoard/EndPoints/Notes/CreateNotes.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BulletBoard/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BulletBoard/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "SaraBranch",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -109,7 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1761742436473</updated>
       <workItem from="1761742437656" duration="1526000" />
-      <workItem from="1761745168379" duration="3297000" />
+      <workItem from="1761745664174" duration="2940000" />
     </task>
     <servers />
   </component>
