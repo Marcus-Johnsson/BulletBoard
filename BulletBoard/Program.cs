@@ -1,7 +1,4 @@
-using BulletBoard.Data;
 using BulletBoard.EndPoints.Notes;
-using Microsoft.EntityFrameworkCore;
-using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,5 +31,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+DeleteNotes.MapEndpoint(app);
 
 app.Run();
