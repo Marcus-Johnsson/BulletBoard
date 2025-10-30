@@ -1,3 +1,4 @@
+using BulletBoard.Data;
 using Microsoft.EntityFrameworkCore;
 using BulletBoard.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -17,7 +18,7 @@ public class UpdateNotes
     private static async Task<IResult> Handle(
         [FromRoute] int id,
         [FromBody] Note updateNote,
-        BulletBoardDb db)
+        BulletDbContext db)
 
     {
         var note = await db.Notes.FindAsync(id);
@@ -25,7 +26,7 @@ public class UpdateNotes
             return Results.NotFound();
         
         if (string.IsNullOrWhiteSpace(updateNote.Title))
-            return Results.BadRequest("Title cannot be empty");s
+            return Results.BadRequest("Title cannot be empty");
         
         //Update fields
         note.Title = updateNote.Title;

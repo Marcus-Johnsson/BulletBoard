@@ -1,4 +1,5 @@
 using BulletBoard.Data;
+using BulletBoard.EndPoints.Notes;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 
@@ -22,7 +23,7 @@ builder.Services.AddDbContext<BulletDbContext>(options =>
 var app = builder.Build();
 
 
-UpdateNotes.MapEndpoint(app);
+UpdateNotes.MapEndPoints(app);
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
