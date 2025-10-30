@@ -33,7 +33,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+UpdateNotes.MapEndPoints(app);
+GetNotes.MapEndpoint(app);
 DeleteNotes.MapEndpoint(app);
+CreateNotes.MapEndpoint(app);
 
 app.Run();

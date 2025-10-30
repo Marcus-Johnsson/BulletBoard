@@ -26,14 +26,15 @@ public class CreateNotes
     [FromBody]  Request request,
     [FromServices] BulletDbContext dbContext
     )
-
     {
         var newNote = new Note
         {
             Title = request.Title,
             Description = request.Description,
-            CreatedAt = DateTime.Now
+            CreatedAt = DateTime.UtcNow,
+            UpdatedAt = DateTime.UtcNow
         };
+        
         dbContext.Notes.Add(newNote);
         await dbContext.SaveChangesAsync();
         
