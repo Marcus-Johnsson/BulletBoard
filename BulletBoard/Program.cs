@@ -23,7 +23,6 @@ builder.Services.AddDbContext<BulletDbContext>(options =>
 var app = builder.Build();
 
 
-UpdateNotes.MapEndPoints(app);
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -36,4 +35,7 @@ app.UseHttpsRedirection();
 
 DeleteNotes.MapEndpoint(app);
 CreateNotes.MapEndpoint(app);
+UpdateNotes.MapEndPoints(app);
+GetNotes.MapEndpoint(app);
+
 app.Run();
