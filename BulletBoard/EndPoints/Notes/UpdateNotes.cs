@@ -21,6 +21,8 @@ public class UpdateNotes
         BulletDbContext db)
 
     {
+        Console.WriteLine("Update Notes");
+
         var note = await db.Notes.FindAsync(id);
         if (note == null)
             return Results.NotFound();

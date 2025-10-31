@@ -18,6 +18,8 @@ public class DeleteNotes
     {
         try
         {
+            Console.WriteLine("Del Notes");
+
             var note = await context.Notes.FindAsync(id);
             
             if (note == null)
