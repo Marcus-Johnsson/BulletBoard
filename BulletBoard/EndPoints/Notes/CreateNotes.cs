@@ -9,7 +9,7 @@ namespace BulletBoard.EndPoints.Notes;
 public class CreateNotes
 {
     public static void MapEndpoint(IEndpointRouteBuilder app) => app
-        .MapPost("api/notes", Handle)
+        .MapPost("/notes", Handle)
         .Produces(StatusCodes.Status201Created)
         .Produces(StatusCodes.Status400BadRequest)
         .Produces(StatusCodes.Status401Unauthorized);

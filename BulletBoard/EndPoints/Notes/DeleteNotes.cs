@@ -7,7 +7,7 @@ namespace BulletBoard.EndPoints.Notes;
 public class DeleteNotes
 {
     public static void MapEndpoint(IEndpointRouteBuilder app) => app
-        .MapDelete("/deletenotes/{id}", Handle)
+        .MapDelete("/notes/{id}", Handle)
         .Produces(StatusCodes.Status200OK)
         .Produces(StatusCodes.Status404NotFound)
         .Produces(StatusCodes.Status400BadRequest);
