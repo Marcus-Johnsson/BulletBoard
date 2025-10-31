@@ -23,7 +23,6 @@ builder.Services.AddDbContext<BulletDbContext>(options =>
 var app = builder.Build();
 
 
-UpdateNotes.MapEndPoints(app);
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -37,5 +36,4 @@ UpdateNotes.MapEndPoints(app);
 GetNotes.MapEndpoint(app);
 DeleteNotes.MapEndpoint(app);
 CreateNotes.MapEndpoint(app);
-
 app.Run();
