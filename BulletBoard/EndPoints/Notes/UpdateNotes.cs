@@ -10,30 +10,41 @@ namespace  BulletBoard.EndPoints.Notes;
 public class UpdateNotes
 {
     public static void MapEndPoints(IEndpointRouteBuilder app) => app
-        .MapPut("/notes/{id}", Handle)
+        .MapPut("/updatenotes/{id}", Handle)
         .Produces(StatusCodes.Status204NoContent)
         .Produces(StatusCodes.Status404NotFound)
         .Produces(StatusCodes.Status400BadRequest);
 
+    private record Request(string  Title, string Description);
+    private record Response(int id, string Title, string Description,  string UpdatedAt);
+    
+    
     private static async Task<IResult> Handle(
         [FromRoute] int id,
-        [FromBody] Note updateNote,
-        BulletDbContext db)
+        [FromBody] Request request,
+        [FromServices] BulletDbContext context)
 
     {
-        var note = await db.Notes.FindAsync(id);
-        if (note == null)
-            return Results.NotFound();
-        
-        if (string.IsNullOrWhiteSpace(updateNote.Title))
-            return Results.BadRequest("Title cannot be empty");
-        
-        //Update fields
-        note.Title = updateNote.Title;
-        note.Description = updateNote.Description;
-        note.UpdatedAt = DateTime.UtcNow;
+        try
+        {
+            var note = await context.Notes.FindAsync(id);
+            if (note == null)
+                return Results.NotFound();
 
-        await db.SaveChangesAsync();
+            if (string.IsNullOrWhiteSpace(request.Title))
+                return Results.BadRequest("Title cannot be empty");
+
+            //Update fields
+            note.Title = request.Title;
+            note.Description = request.Description;
+            note.UpdatedAt = DateTime.UtcNow;
+        }
+        catch
+        {
+            return Results.NotFound();
+        }
+
+        await context.SaveChangesAsync();
             
             return Results.NoContent();
     }
