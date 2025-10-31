@@ -1,5 +1,6 @@
-/*using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata;
+using BulletBoard.Data;
 using BulletBoard.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,7 +10,7 @@ public class CreateNotes
 {
     public static void MapEndpoint(IEndpointRouteBuilder app) => app
         .MapPost("/createnotes", Handle)
-        .Produces<Response>(StatusCodes.Status201Created)
+        .Produces(StatusCodes.Status201Created)
         .Produces(StatusCodes.Status400BadRequest)
         .Produces(StatusCodes.Status401Unauthorized);
     
@@ -18,24 +19,26 @@ public class CreateNotes
         string Description
         );
 
+    private record Response(int Id, string Title);
     
 
     private static async Task<IResult> Handle(
     [FromBody]  Request request,
     [FromServices] BulletDbContext dbContext
     )
-
     {
         var newNote = new Note
         {
             Title = request.Title,
             Description = request.Description,
-            CreatedAt = DateTime.Now
+            CreatedAt = DateTime.UtcNow,
+            UpdatedAt = DateTime.UtcNow
         };
-        dbContext.Note.Add(newNote);
+        
+        dbContext.Notes.Add(newNote);
         await dbContext.SaveChangesAsync();
         
         var response = new Response(newNote.Id, newNote.Title);
         return Results.Ok(response);
     }
-}*/
+}
