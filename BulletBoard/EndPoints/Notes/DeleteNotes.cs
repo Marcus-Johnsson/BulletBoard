@@ -7,7 +7,7 @@ namespace BulletBoard.EndPoints.Notes;
 public class DeleteNotes
 {
     public static void MapEndpoint(IEndpointRouteBuilder app) => app
-        .MapDelete("/deletenotes/{id}", Handle)
+        .MapDelete("/notes/{id}", Handle)
         .Produces(StatusCodes.Status200OK)
         .Produces(StatusCodes.Status404NotFound)
         .Produces(StatusCodes.Status400BadRequest);
@@ -18,6 +18,8 @@ public class DeleteNotes
     {
         try
         {
+            Console.WriteLine("Del Notes");
+
             var note = await context.Notes.FindAsync(id);
             
             if (note == null)
