@@ -4,7 +4,7 @@
 
 	let notes: Note[] = [];
 	let title = '';
-	let content = '';
+	let description = '';
 	let loading = false;
 	let error = '';
 
@@ -25,14 +25,14 @@
 	}
 
 	async function addNote() {
-		if (!title.trim() || !content.trim()) return;
+		if (!title.trim() || !description.trim()) return;
 
 		try {
 			loading = true;
 			error = '';
-			await api.createNote({ title, content });
+			await api.createNote({ title, description });
 			title = '';
-			content = '';
+			description = '';
 			await loadNotes();
 		} catch (e) {
 			error = e instanceof Error ? e.message : 'Failed to create note';
@@ -65,8 +65,8 @@
 	<div class="note-form">
 		<h2>Create New Note</h2>
 		<input type="text" bind:value={title} placeholder="Title" disabled={loading} />
-		<textarea bind:value={content} placeholder="Content" rows="4" disabled={loading}></textarea>
-		<button on:click={addNote} disabled={loading || !title.trim() || !content.trim()}>
+		<textarea bind:value={description} placeholder="Description" rows="4" disabled={loading}></textarea>
+		<button on:click={addNote} disabled={loading || !title.trim() || !description.trim()}>
 			{loading ? 'Adding...' : 'Add Note'}
 		</button>
 	</div>
