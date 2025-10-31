@@ -53,6 +53,11 @@
 			loading = false;
 		}
 	}
+
+	async function updateNote(id: number) {
+
+		
+	}
 </script>
 
 <div class="container">
@@ -86,6 +91,9 @@
 						<small>Created: {new Date(note.createdAt).toLocaleDateString()}</small>
 						<button class="delete-btn" on:click={() => deleteNote(note.id)} disabled={loading}>
 							Delete
+						</button>
+						<button class="update-btn" on:click={() => updateNote(note.id)} disabled={loading}>
+							Update
 						</button>
 					</div>
 				</div>
