@@ -36,4 +36,7 @@ UpdateNotes.MapEndPoints(app);
 GetNotes.MapEndpoint(app);
 DeleteNotes.MapEndpoint(app);
 CreateNotes.MapEndpoint(app);
+UpdateNotes.MapEndPoints(app);
+GetNotes.MapEndpoint(app);
+
 app.Run();
